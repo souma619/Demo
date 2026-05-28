@@ -1,0 +1,17 @@
+{
+  "name": "demo-playwright-framework",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:report": "playwright show-report",
+    "lint": "npx eslint . --ext .ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.46.0",
+    "eslint": "^8.56.0",
+    "typescript": "^5.6.0"
+  }
+}
