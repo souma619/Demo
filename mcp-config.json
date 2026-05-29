@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "node",
+      "args": [
+        "/workspaces/Demo/mcp-server.js"
+      ]
+    }
+  }
+}
