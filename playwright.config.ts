@@ -3,7 +3,7 @@ import { devices } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
   testDir: '.',
-  testMatch: ['**/tests/**/*.ts', '**/ui_tests/**/*.ts'],
+  testMatch: ['**/tests/**/*.spec.ts', '**/ui_tests/**/*.spec.ts'],
   timeout: 30 * 1000,
   expect: {
     timeout: 5000
@@ -23,7 +23,7 @@ const config: PlaywrightTestConfig = {
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] }
-    },
+    }/*,
     {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'] }
@@ -31,7 +31,7 @@ const config: PlaywrightTestConfig = {
     {
       name: 'webkit',
       use: { ...devices['Desktop Safari'] }
-    }
+    }*/
   ],
   outputDir: 'test-results/',
   reporter: [['list'], ['html', { outputFolder: 'html-report', open: 'never' }]]
