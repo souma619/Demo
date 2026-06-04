@@ -2,5 +2,5 @@ node_modules/
 dist/
 test-results/
 html-report/
-.env
 coverage/
+.env/

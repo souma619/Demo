@@ -11,6 +11,6 @@
     "outDir": "dist",
     "skipLibCheck": true
   },
-  "include": ["tests/**/*.ts", "playwright.config.ts"],
+  "include": ["tests/**/*.ts", "ui_tests/**/*.ts", "ui_pages/**/*.ts", "playwright.config.ts"],
   "exclude": ["node_modules"]
 }

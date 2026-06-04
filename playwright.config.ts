@@ -2,7 +2,8 @@ import type { PlaywrightTestConfig } from '@playwright/test';
 import { devices } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
-  testDir: './tests',
+  testDir: '.',
+  testMatch: ['**/tests/**/*.ts', '**/ui_tests/**/*.ts'],
   timeout: 30 * 1000,
   expect: {
     timeout: 5000
@@ -15,7 +16,7 @@ const config: PlaywrightTestConfig = {
     actionTimeout: 0,
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
-    video: 'retain-on-failure',
+    video: 'on',
     baseURL: 'https://example.com'
   },
   projects: [
